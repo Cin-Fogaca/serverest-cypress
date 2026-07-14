@@ -1,0 +1,21 @@
+{
+  "name": "serverest-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "cy:open": "cypress open",
+  "test": "cypress run",
+  "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+  "test:frontend": "cypress run --spec 'cypress/e2e/frontend/**/*.cy.js'"
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.18.1"
+  }
+}
