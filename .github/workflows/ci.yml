@@ -1,0 +1,31 @@
+name: Testes E2E e API
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configura Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Executa os testes Cypress
+        uses: cypress-io/github-action@v6
+
+      - name: Publica relatório como artefato
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: relatorio-de-testes
+          path: cypress/reports
+          retention-days: 7
