@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
   "cy:open": "cypress open",
   "test": "cypress run",
-  "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
-  "test:frontend": "cypress run --spec 'cypress/e2e/frontend/**/*.cy.js'"
+  "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+  "test:frontend": "cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\""
 },
 
   "keywords": [],
