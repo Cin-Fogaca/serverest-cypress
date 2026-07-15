@@ -103,10 +103,3 @@ Artifacts).
 **Pipeline no GitHub Actions:**
 
 ![Pipeline](docs/evidencias/pipeline-github-actions.png)
-
-## Melhorias futuras
-
-- Migrar `Cypress.env()` para a nova API `cy.env()` (deprecation aviso na v15)
-- Adicionar retry automático de testes na pipeline para mitigar oscilações
-  do ambiente público
-- Ampliar a cobertura com cenários de edição e exclusão pela interface
